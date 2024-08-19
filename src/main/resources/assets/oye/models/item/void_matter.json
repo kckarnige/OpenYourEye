@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "oye:item/bronze_plate"
+        "layer0": "oye:item/void_matter"
     }
 }

@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "P P",
-    " V ",
-    "P P"
+    " P ",
+    "PEP",
+    " P "
   ],
   "key": {
-    "V": {
+    "E": {
       "item": "oye:void_matter"
     },
     "P": {
