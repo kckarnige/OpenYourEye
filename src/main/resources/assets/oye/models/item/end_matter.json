@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "oye:item/void_matter"
+        "layer0": "oye:item/end_matter"
     }
 }

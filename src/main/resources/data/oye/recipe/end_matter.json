@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " M ",
+    "PMP",
     "ESE",
-    " B "
+    "PBP"
   ],
   "key": {
     "S": {
@@ -18,10 +18,13 @@
     },
     "B": {
       "item": "minecraft:blaze_powder"
+    },
+    "P": {
+      "item": "minecraft:ender_pearl"
     }
   },
   "result": {
-    "id": "oye:void_matter",
-    "count": 3
+    "id": "oye:end_matter",
+    "count": 2
   }
 }

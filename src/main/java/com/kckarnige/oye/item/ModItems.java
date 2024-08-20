@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item VOID_MATTER = registerItem("void_matter", new Item(new Item.Settings()));
+    public static final Item VOID_MATTER = registerItem("end_matter", new Item(new Item.Settings()));
 
     private static void addItemToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(VOID_MATTER);
@@ -23,7 +23,7 @@ public class ModItems {
     }
 
     public static void registerModItems () {
-        oye.LOGGER.info("Registering Void Matter item... - " + oye.MOD_ID);
+        oye.LOGGER.info("Registering End Catalyst item... - " + oye.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientItemGroup);
     }
