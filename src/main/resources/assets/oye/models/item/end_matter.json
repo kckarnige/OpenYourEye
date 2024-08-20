@@ -1,6 +1,11 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "oye:item/end_matter"
-    }
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oye:item/end_matter"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -0.5, -7]
+		}
+	}
 }
