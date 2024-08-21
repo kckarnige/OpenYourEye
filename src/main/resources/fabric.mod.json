@@ -17,12 +17,6 @@
 	"entrypoints": {
 		"main": [
 			"com.kckarnige.oye.oye"
-		],
-		"client": [
-			"com.kckarnige.oye.oyeClient"
-		],
-		"fabric-datagen": [
-			"com.kckarnige.oye.oyeDataGenerator"
 		]
 	},
 	"depends": {

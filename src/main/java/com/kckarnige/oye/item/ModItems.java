@@ -23,7 +23,7 @@ public class ModItems {
     }
 
     public static void registerModItems () {
-        oye.LOGGER.info("Registering End Catalyst item... - " + oye.MOD_ID);
+        oye.LOGGER.info("[Open Your Eye] Registering End Catalyst item...");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientItemGroup);
     }
