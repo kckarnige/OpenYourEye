@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oye:item/end_matter"
+		"layer0": "openyoureye:item/end_matter"
 	},
 	"display": {
 		"head": {
