@@ -8,7 +8,7 @@ This substance is very dangerous to anyone holding it and can kill the holder if
 
 #
 <details>
-  <summary >Recipes</summary>
+  <summary>Recipes</summary>
   
 ![End Catalyst recipe](https://raw.githubusercontent.com/kckarnige/OpenYourEye/main/oyerecipe.png)
 
