@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "PMP",
-    "ESE",
-    "PBP"
+    "EME",
+    "PSP",
+    "EBE"
   ],
   "key": {
     "S": {
@@ -25,6 +25,6 @@
   },
   "result": {
     "id": "oye:end_matter",
-    "count": 2
+    "count": 1
   }
 }
