@@ -19,20 +19,6 @@ public class EndCatalyst extends Item {
         super(settings);
     }
 
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        if (!world.isClient()) {
-            world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.PLAYERS);
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 3, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 100, 3, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 1, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 2, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 100, 1, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 20, 3, false, false, false));
-        }
-        return TypedActionResult.consume(ItemStack.EMPTY);
-    }
-
     public void inventoryTick(ItemStack nullStack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()) {
             if (entity instanceof PlayerEntity player) {
