@@ -1,0 +1,33 @@
+package com.kckarnige.oye.item;
+
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.World;
+
+public class AntiCatalyst extends Item {
+
+    public AntiCatalyst(Settings settings) {
+        super(settings);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        if (!world.isClient()) {
+            world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_PLAYER_BREATH, SoundCategory.VOICE);
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 120, 2, false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 120, 2, false, false, false));
+        }
+        return TypedActionResult.consume(ItemStack.EMPTY);
+    }
+
+}

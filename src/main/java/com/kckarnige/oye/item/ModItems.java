@@ -13,10 +13,12 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
 
-    public static final Item VOID_MATTER = registerItem("end_matter", new EndCatalyst(new Item.Settings().equipmentSlot(new ItsInYourHead()).maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item VOID_MATTER = registerItem("end_matter", new EndCatalyst(new Item.Settings().maxCount(1)));
+    public static final Item ANTIV_MATTER = registerItem("anti_end_matter", new AntiCatalyst(new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
 
     private static void addItemToItemGroup(FabricItemGroupEntries entries) {
         entries.add(VOID_MATTER);
+        entries.add(ANTIV_MATTER);
     }
 
     private static Item registerItem (String name, Item item) {

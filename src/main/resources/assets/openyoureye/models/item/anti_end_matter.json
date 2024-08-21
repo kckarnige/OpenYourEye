@@ -1,0 +1,11 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "openyoureye:item/anti_end_matter"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -0.5, -7]
+		}
+	}
+}
