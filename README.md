@@ -27,4 +27,4 @@ A: Of course! This mod was meant for modpacks!
 A: Unless it's among friends, no.
 
 ### Q: There's a bug, how can I report it?
-A: Submit an issue on GitHub! [Click here to do that](https://github.com/kckarnige/OpenYourEye/labels), or check the "links" tab on the Modrinth page.
+A: Submit an issue on GitHub! [Click here to do that](https://github.com/kckarnige/OpenYourEye/labels), or check the "links" tab on the [Modrinth page](https://modrinth.com/mod/open-your-eye).
