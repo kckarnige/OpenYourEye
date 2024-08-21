@@ -20,12 +20,12 @@ public class AntiCatalyst extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         if (!world.isClient()) {
-            world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_PLAYER_BREATH, SoundCategory.VOICE);
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 120, 2, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, false));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 120, 2, false, false, false));
+            world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.PLAYERS);
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 120, 2, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 120, 2, false, false, true));
         }
         return TypedActionResult.consume(ItemStack.EMPTY);
     }
