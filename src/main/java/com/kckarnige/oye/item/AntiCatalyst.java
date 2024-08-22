@@ -1,5 +1,6 @@
 package com.kckarnige.oye.item;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -25,7 +26,9 @@ public class AntiCatalyst extends Item {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, true));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20, 2, false, false, true));
+            if (!FabricLoader.getInstance().isModLoaded("saturative")) {
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20, 2, false, false, true));
+            }
         }
         return TypedActionResult.consume(ItemStack.EMPTY);
     }
