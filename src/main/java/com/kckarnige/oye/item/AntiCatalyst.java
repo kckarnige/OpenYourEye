@@ -25,7 +25,7 @@ public class AntiCatalyst extends Item {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, true));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 120, 2, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20, 2, false, false, true));
         }
         return TypedActionResult.consume(ItemStack.EMPTY);
     }
