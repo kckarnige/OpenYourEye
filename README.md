@@ -10,7 +10,7 @@ This substance is very dangerous to anyone holding it and can kill the holder if
 <details>
   <summary>Recipes</summary>
   
-![End Catalyst recipe](https://raw.githubusercontent.com/kckarnige/OpenYourEye/main/oyerecipe.png)
+![End Catalyst recipe](https://raw.githubusercontent.com/kckarnige/OpenYourEye/main/oyerecipe1.png)
 
 ![Eye of Ender recipe](https://raw.githubusercontent.com/kckarnige/OpenYourEye/main/oyerecipe2.png)
   
