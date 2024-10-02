@@ -23,9 +23,7 @@ public class EndCatalyst extends Item {
     public void inventoryTick(ItemStack nullStack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()) {
             if (entity instanceof PlayerEntity player) {
-                if (player.getEquippedStack(EquipmentSlot.OFFHAND).isOf(ModItems.VOID_MATTER)
-                        || player.getEquippedStack(EquipmentSlot.HEAD).isOf(ModItems.VOID_MATTER)
-                        || player.getInventory().main.stream().anyMatch(stack -> stack.isOf(ModItems.VOID_MATTER))) {
+                if (player.getInventory().containsAny((stack -> stack.isOf(ModItems.VOID_MATTER)))) {
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40, 1, false, false, false));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 40, 1, false, false, false));
                 }

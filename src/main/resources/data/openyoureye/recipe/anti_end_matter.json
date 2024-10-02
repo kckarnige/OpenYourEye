@@ -3,16 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:wither_rose"
-    },
-    {
       "item": "minecraft:golden_apple"
     },
     {
       "item": "minecraft:dragon_breath"
     },
     {
-      "item": "minecraft:echo_shard"
+      "item": "openyoureye:end_matter"
     }
   ],
   "result": {
