@@ -1,0 +1,28 @@
+{
+    "parent": "minecraft:story/enter_the_nether",
+    "criteria": {
+      "craft_end_sludge": {
+        "conditions": {
+          "recipe_id": "minecraft:ender_eye"
+        },
+        "trigger": "minecraft:recipe_crafted"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.oye.sludge_crafted.description"
+      },
+      "icon": {
+        "count": 1,
+        "id": "openyoureye:end_matter"
+      },
+      "title": {
+        "translate": "advancements.oye.sludge_crafted.title"
+      }
+    },
+    "requirements": [
+      [
+        "craft_end_sludge"
+      ]
+    ]
+  }

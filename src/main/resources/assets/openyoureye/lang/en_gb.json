@@ -1,4 +1,7 @@
 {
-    "item.openyoureye.end_matter": "End Catalyst",
-    "item.openyoureye.anti_end_matter": "Soul of the End"
+    "item.openyoureye.end_matter": "End Sludge",
+    "item.openyoureye.end_matter.lore": "It sounds like it's...breathing?",
+    "item.openyoureye.anti_end_matter": "Dragon Soul",
+    "advancements.oye.sludge_crafted.title": "It's alive!",
+    "advancements.oye.sludge_crafted.description": "Craft 4 Eyes of Ender using End Sludge"
 }

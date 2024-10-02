@@ -21,16 +21,25 @@ public class AntiCatalyst extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         if (!world.isClient()) {
+            player.getItemCooldownManager().set(this, 15);
             world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.PLAYERS);
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 120, 2, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 3, false, false, true));
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120, 2, false, false, true));
-            if (!FabricLoader.getInstance().isModLoaded("saturative")) {
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20, 2, false, false, true));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 120, 2, false, false, true));
+            if (FabricLoader.getInstance().isModLoaded("saturative")) {
+                if (player.getHungerManager().getFoodLevel() < 100) {
+                    player.getHungerManager().add(50, 5);
+                }
+            } else {
+                if (player.getHungerManager().getFoodLevel() < 10) {
+                    player.getHungerManager().add(14, 5);
+                }
             }
+            
         }
-        return TypedActionResult.consume(ItemStack.EMPTY);
+        return TypedActionResult.consume(player.getStackInHand(hand).copyWithCount(player.getStackInHand(hand).getCount() - 1));
     }
 
 }

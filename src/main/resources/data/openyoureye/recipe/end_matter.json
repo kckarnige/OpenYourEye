@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "EME",
-    "PSP",
-    "EBE"
+    " S ",
+    "EPE",
+    " B "
   ],
   "key": {
     "S": {
@@ -12,9 +12,6 @@
     },
     "E": {
       "item": "minecraft:echo_shard"
-    },
-    "M": {
-      "item": "minecraft:phantom_membrane"
     },
     "B": {
       "item": "minecraft:blaze_powder"
@@ -25,6 +22,6 @@
   },
   "result": {
     "id": "openyoureye:end_matter",
-    "count": 1
+    "count": 2
   }
 }
