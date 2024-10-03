@@ -1,5 +1,6 @@
 ![Mod title](https://kckarnige.github.io/res/oyeb.png)
-#
+
+----
 
 [![Compatible with Sinytra Connector](https://raw.githubusercontent.com/Sinytra/.github/main/badges/connector/cozy.svg)](https://modrinth.com/mod/connector)
 
@@ -9,7 +10,7 @@
 )
 ](https://modrinth.com/mod/open-your-eye)
 
-This mod makes gaining access to the End dimension much more of a challenge, requiring you to reach the ancient cities, the Nether, as well as slaying the 2 withers.
+This mod makes gaining access to the End dimension much more of a challenge, requiring you to reach the ancient cities, the Nether, as well as slay 2 withers.
 
 This mod also adds a new crafting item: End Sludge
 
@@ -18,12 +19,13 @@ End Sludge is used to craft Eyes of Ender, with each crafting giving you two End
 End Sludge is a living substance that will attempt to kill you when on your person, decaying your body.    
 Only hold onto it if you have the intention of using it.
 
-#
+----
 
 ![recipes](https://raw.githubusercontent.com/kckarnige/OpenYourEye/refs/heads/main/oye_craftExample.gif)
 
 Legends tell of a way to purify End Sludge for use with fast, near instant healing.
-#
+
+----
 
 # Q&A 
 
